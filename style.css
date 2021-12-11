@@ -1,4 +1,4 @@
-* {
+/* * {
   font-family: verdana;
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@ body {
 .flex-container {
   background-color: rgb(229, 205, 186);
   display: flex;
-}
+} */
 
 /* --- Clearfix Hack  
 
@@ -33,13 +33,14 @@ body {
 }
  --- */
 
-.box {
-  /* width: 100px; */
+/* .box {
+  min-width: 100px;
   padding: 1rem;
+  flex-grow: 1;
   /* float: left; */
-}
+} */
 
-.one {
+/* .one {
   background-color: blueviolet;
 }
 
@@ -49,4 +50,93 @@ body {
 
 .three {
   background-color: darkgreen;
+} */
+
+/* tile styling */
+/* flex-Container*/
+main {
+  display: flex;
+  background-color: red;
 }
+
+/* flex-item */
+.tile {
+  height: 100px;
+  background-color: palegreen;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  flex-grow: 1000;
+}
+
+.tile:first-child {
+  background-color: seagreen;
+}
+
+.tile:last-child {
+  background-color: orange;
+}
+
+/* Individual Styles on flex items */
+.tile-1 {
+  flex-grow: 1;
+}
+
+.tile-2 {
+  flex-grow: 2;
+}
+
+.tile-3 {
+  flex-grow: 2;
+}
+
+/* Laying out the Webpage | Making Layouts */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  background-color: rosybrown;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+header,footer {
+    background-color: rgb(76, 17, 216);
+    height:10vh;
+    padding: 1rem;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+}
+
+main aside {
+    flex-grow: 2;
+    background-color: sienna;
+}
+
+aside, article {
+    padding: 1rem;
+}
+
+main article {
+    flex-grow: 8;
+    background-color: steelblue;
+}
+
+/* Testing the test div */
+
+/* .test {
+    height: 150px;
+    width: 300px;
+    background-color: #777;
+    padding: 20px;
+} */
