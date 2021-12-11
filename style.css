@@ -1,15 +1,47 @@
-*{
-    font-family: verdana;
-    margin: 0;
+* {
+  font-family: verdana;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: #eee;
+body {
+  background: #eee;
 }
 
-.wrapper{
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
+.flex-container {
+  background-color: rgb(229, 205, 186);
+}
+
+/* --- Clearfix Hack   --- */
+
+.flex-container:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.box {
+  width: 100px;
+  padding: 1rem;
+  float: left;
+}
+
+.one {
+  background-color: blueviolet;
+}
+
+.two {
+  background-color: chocolate;
+}
+
+.three {
+  background-color: darkgreen;
+}
