@@ -14,24 +14,29 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 1rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .flex-container {
   background-color: rgb(229, 205, 186);
+  display: flex;
 }
 
-/* --- Clearfix Hack   --- */
+/* --- Clearfix Hack  
 
 .flex-container:after {
   content: "";
   clear: both;
   display: block;
 }
+ --- */
 
 .box {
-  width: 100px;
+  /* width: 100px; */
   padding: 1rem;
-  float: left;
+  /* float: left; */
 }
 
 .one {
