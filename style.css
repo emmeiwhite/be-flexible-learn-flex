@@ -1,4 +1,4 @@
-/* * {
+* {
   font-family: verdana;
   margin: 0;
   padding: 0;
@@ -22,7 +22,30 @@ body {
 .flex-container {
   background-color: rgb(229, 205, 186);
   display: flex;
-} */
+}
+
+.box {
+  min-width: 100px;
+  padding: 1rem;
+}
+
+.one {
+  background-color: blueviolet;
+  flex-grow: 1;
+  flex-shrink: 3;
+}
+
+.two {
+  background-color: chocolate;
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+
+.three {
+  background-color: darkgreen;
+  flex-grow: 3;
+  flex-shrink: 1;
+}
 
 /* --- Clearfix Hack  
 
@@ -32,25 +55,6 @@ body {
   display: block;
 }
  --- */
-
-/* .box {
-  min-width: 100px;
-  padding: 1rem;
-  flex-grow: 1;
-  /* float: left; */
-} */
-
-/* .one {
-  background-color: blueviolet;
-}
-
-.two {
-  background-color: chocolate;
-}
-
-.three {
-  background-color: darkgreen;
-} */
 
 /* tile styling */
 /* flex-Container*/
@@ -94,9 +98,9 @@ main {
 /* Laying out the Webpage | Making Layouts */
 
 * {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 section {
@@ -107,29 +111,31 @@ section {
   text-align: center;
 }
 
-header,footer {
-    background-color: rgb(76, 17, 216);
-    height:10vh;
-    padding: 1rem;
+header,
+footer {
+  background-color: rgb(76, 17, 216);
+  height: 10vh;
+  padding: 1rem;
 }
 
 main {
-    height: 80vh;
-    display: flex;
+  height: 80vh;
+  display: flex;
 }
 
 main aside {
-    flex-grow: 2;
-    background-color: sienna;
+  flex-grow: 2;
+  background-color: sienna;
 }
 
-aside, article {
-    padding: 1rem;
+aside,
+article {
+  padding: 1rem;
 }
 
 main article {
-    flex-grow: 8;
-    background-color: steelblue;
+  flex-grow: 8;
+  background-color: steelblue;
 }
 
 /* Testing the test div */
