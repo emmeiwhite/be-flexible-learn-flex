@@ -61,6 +61,7 @@ body {
 main {
   display: flex;
   background-color: red;
+  flex-wrap: wrap;
 }
 
 /* flex-item */
@@ -71,7 +72,8 @@ main {
   padding: 1rem;
   color: #fff;
   text-transform: uppercase;
-  flex-grow: 1000;
+  min-width: 200px;
+  /* flex-grow: 1; */
 }
 
 .tile:first-child {
@@ -83,21 +85,21 @@ main {
 }
 
 /* Individual Styles on flex items */
-.tile-1 {
+/* .tile-1 {
   flex-grow: 1;
 }
 
 .tile-2 {
-  flex-grow: 2;
+  flex-grow: 1;
 }
 
 .tile-3 {
   flex-grow: 2;
-}
+} */
 
 /* Laying out the Webpage | Making Layouts */
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -138,11 +140,4 @@ main article {
   background-color: steelblue;
 }
 
-/* Testing the test div */
-
-/* .test {
-    height: 150px;
-    width: 300px;
-    background-color: #777;
-    padding: 20px;
-} */
+ */
